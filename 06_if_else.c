@@ -82,3 +82,38 @@ else{
     
     return 0;
 }
+
+
+/*Q. Write a program to calculate tax paid on income. 
+income 250000 - 500000(tax = 5%)
+income 500000 - 1000000 (tax = 20%)
+income 1000000 and above(tax = 30%) 
+*/
+int main() {
+    int income ;
+    float five , twenty , thirty;
+    printf("Enter salary \n");
+    scanf("%d", &income);
+
+five = (income-250000)/100*5;
+twenty = (income-500000)/100*20;
+thirty = (income-1000000)/100*30;
+
+if(income<=500000 && income>=250000)
+{
+printf("Your deducted tax is %f", five);
+}
+
+else if(income<=1000000 && income>500000)
+{
+printf("Your deducted tax is %f", twenty);
+}
+else if(income>1000000){
+    printf("Your deducted tax is %f", thirty);
+}
+
+else{
+    printf("Invalid income");
+}
+    return 0;
+}
