@@ -18,7 +18,7 @@ int main()
 }
 
 
-// Q, Make aprorm to allocate grades to marks obtained by a student
+// Q, Make a prorgram to allocate grades to marks obtained by a student
 
 int main() {
     int marks ;
@@ -49,5 +49,36 @@ int main() {
     else{
         printf("F");
     }
+    return 0;
+}
+
+
+
+
+
+//Q. Make a program to check whether a student is pass or fail in overall or in each subject 
+
+int main() {
+    int physics, chemistry, biology;
+    double total;
+    printf("Enter physics marks ");
+    scanf("%d", &physics);
+
+    printf("Enter chemistry marks ");
+    scanf("%d", &chemistry);
+
+    printf("Enter biology marks ");
+    scanf("%d", &biology);
+
+    total = (physics + chemistry + biology)/3;
+
+if (total<40 || physics<33 || chemistry<33 || biology<33 ){
+    printf("Your total percentage is %f and you are fail", total);
+}
+
+else{
+    printf("You are pass");
+}
+    
     return 0;
 }
