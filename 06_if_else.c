@@ -148,3 +148,39 @@ int main()
     }
     return 0;
 }
+
+//Q. Program to find the greatest of four number entered by the user
+
+int main()
+{
+    int a, b, c, d;
+    printf("Enter your number \n");
+    scanf("%d", &a);
+
+    printf("Enter your number \n");
+    scanf("%d", &b);
+
+    printf("Enter your number \n");
+    scanf("%d", &c);
+
+    printf("Enter your number \n");
+    scanf("%d", &d);
+
+    if (a > b && a > c && a > d)
+    {
+        printf("%d is the greatest", a);
+    }
+    if (b > a && b > c && b > d)
+    {
+        printf("%d is the greatest", b);
+    }
+    if (c > b && c > a && c > d)
+    {
+        printf("%d is the greatest", c);
+    }
+    if (d > b && d > c && d > a)
+    {
+        printf("%d is the greatest", d);
+    }
+    return 0;
+}
